@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Footer</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            height: 100%;
+            padding: 20px 10px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .company-info,
+        .quick-links,
+        .product-details,
+        .call-info {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .company-info h3,
+        .quick-links h3,
+        .product-details h3,
+        .call-info h3 {
+            color: #fff;
+        }
+
+        .quick-links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .quick-links li {
+            margin-bottom: 5px;
+        }
+
+        .quick-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .quick-links a:hover {
+            text-decoration: underline;
+        }
+
+        .copy {
+    display: inline-block;
+    width: 100%;
+    /* height: 20px; */
+    text-align: center;
+    background-color: #9f9494;
+    height: 40px;
+    padding-top: 20px;
+}
+
+        .copy p {
+            display: inline;
+        }
+
+        .TOP {
+            background-color: #35288b;
+            display: inline-block;
+            width: 100%;
+            height: 30px;
+            text-align: left center;
+            margin-top: 0;
+            padding: 10px;
+            padding-left: 60px;
+            padding-top: 20px;
+        }
+
+        .TOP .statement {
+            display: inline;
+            margin-right: 500px;
+        }
+
+        .fab,
+        .far {
+            font-weight: 400;
+            color: white;
+            padding-right: 20px;
+            margin-left: 90px;
+        }
+
+        .TOP .links {
+            display: inline;
+            text-align: right;
+            padding-right: 20px;
+            color: white;
+        }
+.quick-links ul li {padding-top: 7px;}
+
+
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+            }
+
+            .company-info,
+            .quick-links,
+            .product-details,
+            .call-info {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+ </head>
+
+<body>
+    <footer>
+        <div class="TOP">
+            <div class="statement">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <div class="links">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="footer-content">
+                <div class="company-info">
+                    <h2>Shree Shyamji Distributer</h2>
+                    <p>123 Belanganj, Agar</p>
+                    <p>Email: jainsonslocks@gmail.com</p>
+                    <p>Phone: 123-456-7890</p>
+                </div>
+                <div class="quick-links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a hre=f="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="product-details">
+                    <h2>Product Details</h2>
+                    <p>Learn more about our products...</p>
+                </div>
+                 
+            </div>
+        </div>
+        <div class="copy">
+            <p class="copyright">&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
